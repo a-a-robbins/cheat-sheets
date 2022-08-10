@@ -60,3 +60,35 @@ then
 else 
     echo "$FILE is not a file"
 fi
+
+
+# CASE STATEMENT (very similar to the SWITCH statement in other languages)
+read -p "Are you 21 or over? Y/N" ANSWER #will get user input
+case "$ANSWER" in
+    [yY] | [yY][eE][sS]
+        echo "You can have a beer :)"
+        ;; 
+    [nN] | [nN][oO]
+        echo "Sorry, no drinking"
+        ;;
+    *)
+        echo "Please enter y/yes or n/no" # default case
+        ;;
+esac # "case" backwards 
+
+# FOR LOOPS
+NAMES="Brad Kevin Alice Mark"
+for NAME in $NAMES
+    do 
+        echo "Hello $NAME"
+done
+
+FILES=$(ls *.txt) # list files and pick all .txt
+NEW="new"
+for FILE in $FILES 
+    do 
+        echo "Renaming $FILE to new-$FILE"
+        mv $FILE $NEW-$FILE 
+done
+
+# WHILE LOOPS 
