@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Skeleton CSS Cheat Sheet</title>
+    <!-- ADD SOME STRAIGHT STYLING -->
+    <style>
+        .columns, .column{
+            background: lightsalmon; 
+            border: 5px skyblue solid;
+        }
+    </style>
 </head>
 <body>
 
@@ -101,6 +108,55 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- FORMS -->
+    <form>
+        <div>
+            <label>Name</label>
+            <input class="u-full-width" type="text" placeholder="Enter name">
+        </div>
+        <div>
+            <label>Membership</label>
+            <select>
+                <option value="1">Membership 1</option>
+                <option value="2">Membership 2</option>
+                <option value="3">Membership 3</option>
+            </select>
+        </div>
+        <div>
+            <label>Message</label>
+            <textarea class="u-full-width" placeholder="Enter message"></textarea>
+        </div>
+        <div>
+            <label class="">
+                <input type="checkbox">
+                <span class="label-body">Subscribe to email</span>
+            </label>
+        </div>
+        <input class="button-primary" type="submit" value="Submit">
+    </form>
+
+    <!-- GRID -->
+    <div class="row">
+        <div class="eight columns">
+            <h4>Eight Columns</h4>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus natus qui, sapiente voluptate expedita doloribus nulla non dicta ad excepturi nobis unde dolorem repudiandae tempora nesciunt accusamus cumque aspernatur sequi! Eveniet fugit dolores harum animi possimus eius velit dolorem.
+        </div>
+        <div class="four columns">
+            <h4>Four Columns</h4>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus natus qui, sapiente voluptate expedita doloribus nulla non dicta ad excepturi nobis unde dolorem repudiandae tempora nesciunt accusamus cumque aspernatur sequi! Eveniet fugit dolores harum animi possimus eius velit dolorem.
+        </div>
+    </div>
+    <div class="row">
+        <div class="six columns">
+            <h4>six Columns</h4>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus natus qui, sapiente voluptate expedita doloribus nulla non dicta ad excepturi nobis unde dolorem repudiandae tempora nesciunt accusamus cumque aspernatur sequi! Eveniet fugit dolores harum animi possimus eius velit dolorem.
+        </div>
+        <div class="six columns">
+            <h4>six Columns</h4>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus natus qui, sapiente voluptate expedita doloribus nulla non dicta ad excepturi nobis unde dolorem repudiandae tempora nesciunt accusamus cumque aspernatur sequi! Eveniet fugit dolores harum animi possimus eius velit dolorem.
+        </div>
+    </div>
 
 </body>
 </html>
