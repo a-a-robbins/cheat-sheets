@@ -92,3 +92,24 @@ for FILE in $FILES
 done
 
 # WHILE LOOPS 
+LINE=1
+while read -r CURRENT_LINE
+    do 
+        echo "$LINE: $CURRENT_LINE"
+        ((LINE++))
+done < "./new-1.txt"
+
+# FUNCTIONS
+function sayHello() {
+    echo "Hello World"
+}
+sayHello
+
+# --- using parameters ---
+function greet() {
+    echo "Hello I am $1 and I am $2"
+}
+
+greet "Jane" "36" # will print "Hello I am Jane and I am 36"
+
+CREATE A FOLDER AND WRITE TO A FILE
