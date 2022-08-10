@@ -112,4 +112,8 @@ function greet() {
 
 greet "Jane" "36" # will print "Hello I am Jane and I am 36"
 
-CREATE A FOLDER AND WRITE TO A FILE
+# CREATE A FOLDER AND WRITE TO A FILE
+mkdir hello 
+touch "hello/world.txt"
+echo "Hello World" >> "hello/world.txt"
+echo "Created hello/world.txt"
